@@ -1,5 +1,8 @@
 *{margin: 0;}
 
+
+
+
 .header {
     background: black;
     text-align: left;
@@ -8,10 +11,22 @@
     color: white;
     padding: 4px;
     font-family: sans-serif;
-}
+    }
+
+
+
 
 .control-panel {
-    background: lightgray;
+    /* background: lightgray;*/
+    /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); 
+    */
+    /* color:white; font-family: 'Helvetica Neue', sans-serif; font-size:25px; font-weight: bold; letter-spacing: -1px;
+     line-height: 1; text-align: center; */
+    background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
     text-align: right;
     padding: 4px;
     
