@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-bar {
+    background: #FF4500;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background-color: #FFA500;
+    border-radius: 2px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    background-color: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+canvas {
+    background: #fff;
+    border: 1px dashed;
+    margin: auto;
+}
+
+
+/* a {
+    display: inline-block;
+    background: #69c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100px;
+} */
+
+.pen-tools {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.fa-refresh {
+    margin-left: 10px;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+.pen-size {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.board {
+    width: 800px;
+    margin: auto;
+}
+
+.drawing-colors {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.color-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.color-circle:nth-child(1) {
+    background-color: hotpink;
+}
+
+.color-circle:nth-child(2) {
+    background-color: orange;
+}
+
+.color-circle:nth-child(3) {
+    background-color: red;
+}
+
+.color-circle:nth-child(4) {
+    background-color: yellow;
+}
+
+.color-circle:nth-child(5) {
+    background-color: black;
+}
+
+.color-circle:nth-child(6) {
+    background-color: blue;
+}
+
+.color-circle:nth-child(7) {
+    background-color: white;
+}
+
+.color-circle:nth-child(8) {
+    background-color: green;
+}
+
+.color-circle:nth-child(9) {
+    background-color: violet;
+}
+
+.active {
+    transform: scale(1.3);
+}
