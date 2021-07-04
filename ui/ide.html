@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Collaborative Coding Platform</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" /> 
 </head>
 
 <body1>
@@ -20,11 +20,14 @@
 
 <body>
 
-    <div class="header"> Collaborative Coding Platform </div>
+    <div class="header" style="text-align: center; color:white; font-family: 'Helvetica Neue', sans-serif; font-size:25px; 
+    font-weight: bold; letter-spacing: -1px;
+    line-height: 1; text-align: center;"> Collaborative Coding Platform 
+       
+    </div>
     <div class="control-panel">
-        <p style="text-align:left;">Drawing text tools</p>
-
-        Select Language: 
+        
+        <p style="text-align:left;">Drawing text tools</p>          Select Language: 
         &nbsp; &nbsp;
         <select id="languages" class="languages" onchange="changeLanguage()">
             <option value="c"> C </option>
@@ -34,7 +37,13 @@
             <option value="node"> Node JS </option>
         </select>
     </div>
-    <div class="editor" id="editor"></div>
+    
+        <div class="editor" id="editor"></div>
+        <div class="chatbox"><h3>Chatbox</h3>
+            <input type="text" style="width:100%; margin-top: 113%;" ><br>
+            <button class="btn btn-outline-primary">send</button>
+        </div>
+    
 
     <div class="button-container">
         <button class="btn" onclick="executeCode()"> Run </button>

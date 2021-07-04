@@ -1,5 +1,47 @@
 *{margin: 0;}
 
+.menu-bar {
+    background: #FF4500;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background-color: #FFA500;
+    border-radius: 2px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    background-color: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+
+
+
 .header {
     background: black;
     text-align: left;
@@ -8,10 +50,22 @@
     color: white;
     padding: 4px;
     font-family: sans-serif;
-}
+    }
+
+
+
 
 .control-panel {
-    background: lightgray;
+    /* background: lightgray;*/
+    /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); 
+    */
+    /* color:white; font-family: 'Helvetica Neue', sans-serif; font-size:25px; font-weight: bold; letter-spacing: -1px;
+     line-height: 1; text-align: center; */
+    background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
     text-align: right;
     padding: 4px;
     
@@ -36,6 +90,7 @@
     color: white;
     padding: 8px;
     border: 0;
+    margin-right: 100%;
 }
 
 .output {
@@ -44,9 +99,28 @@
         min-height: 100px;
         width: 99%;
         resize: none;
+        
 
 }
 #tools
 {
          left: 55px;
 }
+
+#editor
+{
+    width: 75%;
+    float: left;
+
+}
+.chatbox{
+    width: 25%;
+    float:left;
+    background-color:whitesmoke;
+    height: 400px;
+}
+.send_btn
+{
+    float: left;
+}
+
